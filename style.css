@@ -2,7 +2,6 @@
 
 body{
     background: url('res/Images/background12.png');
-    overflow: hidden;
 }
 
 /* .top-bar - MIKASA Logo and following list */
@@ -38,6 +37,7 @@ body{
 .top-bar ul li img {
     position: relative;
     bottom: 2px;
+    left: -1px;
 }
 
 .top-bar ul li a {
@@ -131,4 +131,30 @@ hr{
     box-sizing: border-box;
     position: relative;
     top: -12px;
+}
+
+
+/* Top Main Content */
+/*Left Side*/
+
+/*Right Side*/
+.left-column {
+    margin-left: 40px;
+}
+.right-column {
+    background-color: #3d3c3a;
+    color: white;
+    padding: 40px 50px 0px 30px;
+    margin-right: 50px;
+    font-size: small;
+    line-break: auto;
+    flex-grow: 100;
+    line-height: 15px;
+}
+
+.right-column-content-border {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+
 }
