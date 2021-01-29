@@ -15,6 +15,10 @@ body{
     color: grey;
 }
 
+.top-bar img {
+    position: relative;
+    left: 10px;
+}
 .top-bar ul {
     display: flex;
     position: relative;
@@ -71,10 +75,10 @@ body{
     
 }
 
- .top-nav > nav > form {
+ .top-nav-form {
     display: inline;
     position: relative;
-    right: 250px;
+    right: 40px;
     bottom: 8px;
 } 
 
@@ -84,7 +88,8 @@ body{
 .bridal-registry{
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    position: relative;
+    right: 90px;
     justify-content: flex-end;
     align-items:flex-end;
 }
@@ -100,13 +105,15 @@ body{
 .second-nav {
     padding-top: 20px;
     margin-bottom: 0px;
+    margin-left: -22px;
 }
 
 .second-nav-list {
-    list-style: circle;
+    list-style: '○';
     position: relative;
     top: -8px; 
-    
+    color: purple;
+    list-style-position: outside;
 }
 
 .second-nav-list > li {
