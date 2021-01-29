@@ -139,13 +139,12 @@ hr{
 
 /*Right Side*/
 .left-column {
-    margin-left: 40px;
+
 }
 .right-column {
     background-color: #3d3c3a;
     color: white;
     padding: 40px 50px 0px 30px;
-    margin-right: 50px;
     font-size: small;
     line-break: auto;
     flex-grow: 100;
@@ -157,4 +156,68 @@ hr{
     padding-top: 10px;
     border-bottom: 1px solid white;
 
+}
+
+/*Bottom Content*/
+.bottom-banner{
+    justify-content: center;
+    margin-left: 0px;
+    margin-right:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.glass {
+    background-color: white;
+    height: 200px;
+    padding: 20px;
+    font-size: small;
+    position: relative;
+    z-index: -3;
+}
+.glass a {
+    float: right;
+}
+.glass img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -2;
+}
+
+.plate {
+    background-color: white;
+    height: 200px;
+    padding: 20px;
+    font-size: small;
+    position: relative;
+    z-index: -3;
+}
+
+.plate a{
+    float: right;
+}
+
+.plate img {
+    position: absolute;
+    bottom:0px;
+    z-index: -2;
+}
+
+.album {
+    background-color: white;
+    height: 200px;
+    padding: 10px;
+    margin-right: -10px;
+    font-size: small;
+    position: relative;
+    z-index: -3;
+    
+}
+
+.album img {
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    z-index: -2;
 }
