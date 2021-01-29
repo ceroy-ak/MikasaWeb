@@ -4,6 +4,7 @@ body{
     background: url('res/Images/background12.png');
 }
 
+
 /* .top-bar - MIKASA Logo and following list */
 
 .top-bar{
@@ -17,12 +18,13 @@ body{
 .top-bar img {
     position: relative;
     left: 10px;
+    float: left;
 }
 .top-bar ul {
     display: flex;
     position: relative;
     top: 10px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-end;
     list-style: '|';
 }
@@ -37,8 +39,8 @@ body{
 
 .top-bar ul li img {
     position: relative;
-    bottom: 2px;
-    left: -1px;
+    bottom: -3px;
+    left: -3px;
 }
 
 .top-bar ul li a {
@@ -66,7 +68,7 @@ body{
 
 .top-nav-list > li {
     display: inline;
-    align-items: center;
+    align-items: flex-start;
     padding: 8px 20px 10px 20px;
     position: relative;
     right:  10px; 
@@ -140,32 +142,40 @@ hr{
 
 /* Top Main Content */
 /*Left Side*/
-
+.left-column img {
+    border: 5px solid white;
+}
 /*Right Side*/
+
+.right-parent-column{
+    background-color: #3d3c3a;
+    align-items: center;
+    
+}
 .right-column {
     background-color: #3d3c3a;
-    color: white;
-    padding: 40px 50px 0px 30px;
+    color: rgb(192, 181, 181);
+    padding: 40px 50px 10px 30px;
     font-size: small;
     line-break: auto;
     flex-grow: 100;
     line-height: 15px;
-    border: 10px solid gold;
+    border: 1px solid #52524f;
 }
 
 .right-column-content-border {
     padding-bottom: 5px;
     padding-top: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #52524f;
     cursor: pointer;
 
 }
 
 /*Bottom Content*/
 .bottom-row{
-    border: 5px solid black;
+    border: 10px solid black;
     background-color: white;
-    border-bottom: 8px solid black;
+    
 }
 
 .glass {
@@ -177,7 +187,6 @@ hr{
     z-index: 3;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-right: 1px solid grey;
 }
 .glass a {
     float: right;
@@ -198,6 +207,7 @@ hr{
     z-index: 3;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-left: 1px solid grey;
     border-right: 1px solid grey;
 }
 
