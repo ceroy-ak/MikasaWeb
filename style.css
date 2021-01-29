@@ -240,7 +240,7 @@ hr{
 
 /* Footer */
 footer {
-    color: white;
+    color: rgb(192, 181, 181);
 }
 
 .footer-list{
@@ -253,6 +253,6 @@ footer {
 
 .footer-link{
     text-decoration: none;
-    color: white;
+    color: rgb(192, 181, 181);
     cursor: pointer;
 }
