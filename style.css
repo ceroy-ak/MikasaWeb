@@ -109,69 +109,110 @@ body{
     
 }
 
+.bottom-banner{
+    height: 11rem;
+}
 .glass {
-    background-color: white;
-    height: 200px;
-    padding: 20px;
-    font-size: small;
-    position: relative;
     z-index: 3;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    position: relative;
+}
+
+.glass>p:first-child{
+    color: #777772;
+    font-size: 1.45rem;
+}
+
+.glass>p:nth-child(2){
+    color: #aaa5a5;
+    font-size: 0.85rem;
 }
 .glass a {
     float: right;
+    text-decoration: none;
+    color: #7d8692;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.glass a:hover {
+    color: #52524f;
 }
 .glass img {
     position: absolute;
-    left: 0px;
-    bottom: -15px;
+    top: 1.5rem;
     z-index: -100;
 }
 
 .plate {
-    background-color: white;
-    height: 200px;
-    padding: 20px;
-    font-size: small;
-    position: relative;
     z-index: 3;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    position: relative;
 }
 
-.plate a{
+.plate>p:first-child{
+    color: #777772;
+    font-size: 1.45rem;
+}
+
+.plate>p:nth-child(2){
+    color: #aaa5a5;
+    font-size: 0.85rem;
+}
+.plate a {
     float: right;
+    text-decoration: none;
+    color: #7d8692;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
+.plate a:hover {
+    color: #52524f;
+}
 .plate img {
     position: absolute;
-    bottom:-15px;
-    z-index: -2;
+    top: 3.5rem;
+    z-index: -100;
 }
 
-.album {
-    background-color: white;
-    height: 200px;
-    padding: 10px;
-    font-size: small;
+
+.album{
     position: relative;
-    z-index: 3;
+    
     
 }
 
-.album img {
-    position: absolute;
-    right: 0px;
-    bottom:-15px;
-    z-index: -2;
+.bottom-album-z {
+    z-index: 3;
+}
+.album-title{
+font-size: 1.45rem;
+color: #777772;
+}
+.album-desc{
+font-size:0.85rem;
+color: #aaa5a5;
+}
+.album-link{
+font-size: 1rem;
+text-decoration: none;
+    color: #7d8692;
+}
+.album-link:hover{
+    color: #52524f;
+}
+.album-img{
+    float: right;
+    position: relative;
+    left: 0.8rem;
+    top: 2rem;
+    z-index: -100;
+
 }
 
 /* Footer */
 footer {
-    color: rgb(192, 181, 181);
+    color: #979496;
+    font-size: 0.85rem;
 }
 
 .footer-list{
@@ -183,7 +224,7 @@ footer {
 }
 
 .footer-link{
-    color: rgb(192, 181, 181);
+    color: #979496;
     cursor: pointer;
 }
 
@@ -191,6 +232,6 @@ footer {
     border-right: 1px solid #52524f;
 }
 
-.footer-form {
-    float: right;
+input{
+    border: 3px inset grey;
 }
