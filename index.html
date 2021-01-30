@@ -13,25 +13,38 @@
 
 <body>
     <header>
+
         <!-- Top Bar-->
-        <div class="container-fluid">
-            <div class="top-bar">
-                <img class="image-fluid" src="res/Images/logo.png" alt="Mikasa Logo">
-                <ul>
-                    <li>Welcome Jeffrey (Sign Out)</li>
-                    <li>My Account</li>
-                    <li><img src="res/Images/icon_cart.png" alt="Cart Icon">
-                        999 Items - $9999.99 <a href="#">Checkout</a>
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="res/Images/logo.png" alt="Mikasa Logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link border-right-item">Welcome Jeffrey (Sign Out)</a>
                     </li>
-                    <li>Customer Service</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link border-right-item">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link border-right-item d-flex align-items-center">
+                            <img class="px-1" src="res/Images/icon_cart.png" alt="Cart Icon">
+                            999 Items - $9999.99 Checkout
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Customer Service</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-        
+        </nav>
+
 
         <!--Top Navigation Bar-->
 
-        <div class="container-fluid top-nav">
+        <!-- <div class="container-fluid top-nav">
             <div class="container">
                 <div class="row">
                     <nav class="navbar">
@@ -51,7 +64,51 @@
                     </nav>
                 </div>
             </div>
+        </div> -->
+        <div class="container-fluid top-nav-parent">
+
+            <nav class="navbar navbar-expand-md navbar-light py-0 my-1">
+                <div class="container">
+
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navId">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse top-nav-nc" id="navId">
+                        <ul class="navbar-nav">
+                            <li class="nav-item top-nav-item pe-md-3">
+                                <a href="#" class="nav-link">Dining</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-3">
+                                <a href="#" class="nav-link">Crystal</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-3">
+                                <a href="#" class="nav-link">By Brand</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-3">
+                                <a href="#" class="nav-link">What's New</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-2">
+                                <a href="#" class="nav-link">Find a Gift</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-2">
+                                <a href="#" class="nav-link">Wedding Ideas</a>
+                            </li>
+                            <li class="nav-item top-nav-item px-md-2">
+                                <a href="#" class="nav-link">Clearance & Special Offers</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <form class="d-flex top-nav-form py-1">
+                        <input class="form-control me-2" type="text" placeholder="Special Keyword/Item #">
+                        <button class="small rounded">GO</button>
+                    </form>
+                </div>
+            </nav>
+
         </div>
+
 
         <!--Second Navigation Bar-->
         <div class="container">
@@ -74,9 +131,6 @@
 
             </div>
         </div>
-
-        <!-- Horizontal Rule-->
-        <hr>
     </header>
 
 
@@ -86,7 +140,7 @@
         <div class="container mx-5">
             <div class="row content-top">
                 <div class="col-md-8 left-column">
-                    <img  class="image-fluid" src="res/Images/Capture.PNG" height="450px" width="785px" alt="Banner">
+                    <img class="image-fluid" src="res/Images/Capture.PNG" height="450px" width="785px" alt="Banner">
                 </div>
 
                 <div class="col-md right-parent-column align-self-center">
