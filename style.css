@@ -235,5 +235,6 @@ footer {
 }
 
 input{
-    border: 3px inset grey;
+    border-top: 3px inset grey;
+    border-left: 3px inset grey;
 }
