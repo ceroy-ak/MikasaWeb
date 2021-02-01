@@ -5,40 +5,40 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* @media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+} */
 
 /* .top-bar - MIKASA Logo and following list */
 
 .border-right-item::after {
     content: '|';
-    padding-left:1.4rem;
+    padding-left:22.4px;
 }
 
 @media (max-width: 992px) {
     .border-right-item::after {
         content: '';
-        padding-left:0rem;
+        padding-left:0px;
     }
 }
 
 /*Top Navigation Bar */
 
-.top-nav-nc {
-    width: 70%;
-}
-
-.top-nav-parent > nav {
-    background-color:#dad8d9;
-    
-}
 
 
 .top-nav-parent {
-    border-top: 1px solid #dad8d9;
-    border-bottom: 1px solid #dad8d9;
+    background-color:#dad8d9;
+    border-top: 2px solid white;
+    border-bottom:2px solid white;
+    outline: 1px solid #dad8d9;
 }
 
 .top-nav-item{
-    border-right: 2px solid white;
+    border-right: 1px solid white;
 }
 
 /*Second Navigation Bar */
@@ -46,13 +46,13 @@ body{
 
 .second-nav-item::before {
     content: '○';
-    padding-right: 1rem;
+    padding-right: 16px;
     cursor: default;
 }
 @media (max-width: 992px) {
     .second-nav-item::before {
         content: '';
-        padding-right: 0rem;
+        padding-right: 0px;
         cursor: default;
     }
 }
@@ -60,6 +60,7 @@ body{
 .bridal-registry {
     text-decoration: none;
     color: grey;
+    padding-right: 85px;
 }
 
 .bridal-registry:hover {
@@ -68,9 +69,16 @@ body{
 
 /* Top Main Content */
 
+.content-top {
+    padding-left: 8px; 
+    padding-right: 8px;
+}
+
 /*Left Side*/
 .left-column {
     border: 10px solid white;
+    
+    
 }
 
 /*Right Side*/
@@ -81,13 +89,15 @@ body{
     border-right: 10px solid white;
     background-color: #3d3c3a;
     align-items: center;
-    
 }
 .right-sub-column {
     background-color: #3d3c3a;
     border: 2px solid #52524f;
-    height: 100%;
     color: #d6d4d5;
+}
+
+.right-column-p {
+    line-height: 30px;
 }
 
 .rc-content > a{
@@ -101,18 +111,26 @@ body{
 }
 
 .rc-border {
+    padding-bottom: 5px;
+    margin-top: 5px;
     border-bottom: 2px solid #52524f;
 }
 
+.row-bottom-a {
+    font-size: 15px;
+    color: #a79fa3;
+}
 /*Bottom Content*/
 .bottom-row{
     border: 10px solid black;
     background-color: white;
+    /* margin-left: 10px;
+    margin-right: 5px; */
     
 }
 
 .bottom-banner{
-    height: 11rem;
+    height: 176px;
 }
 .glass {
     z-index: 3;
@@ -121,19 +139,19 @@ body{
 
 .glass>p:first-child{
     color: #777772;
-    font-size: 1.45rem;
+    font-size: 23.2px;
 }
 
 .glass>p:nth-child(2){
     color: #aaa5a5;
-    font-size: 0.85rem;
+    font-size: 13.6px;
 }
 .glass a {
     float: right;
     text-decoration: none;
     color: #7d8692;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    margin-top: 16px;
+    margin-right: 16px;
 }
 
 .glass a:hover {
@@ -141,7 +159,7 @@ body{
 }
 .glass img {
     position: absolute;
-    top: 1.5rem;
+    top: 24px;
     z-index: -100;
 }
 
@@ -152,19 +170,19 @@ body{
 
 .plate>p:first-child{
     color: #777772;
-    font-size: 1.45rem;
+    font-size: 10px;
 }
 
 .plate>p:nth-child(2){
     color: #aaa5a5;
-    font-size: 0.85rem;
+    font-size: 13.6px;
 }
 .plate a {
     float: right;
     text-decoration: none;
     color: #7d8692;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    margin-top: 16px;
+    margin-right: 16px;
 }
 
 .plate a:hover {
@@ -172,7 +190,7 @@ body{
 }
 .plate img {
     position: absolute;
-    top: 3.5rem;
+    top: 56px;
     z-index: -100;
 }
 
@@ -187,15 +205,14 @@ body{
     z-index: 3;
 }
 .album-title{
-font-size: 1.45rem;
-color: #777772;
+font-size: 23.2px;color: #777772;
 }
 .album-desc{
-font-size:0.85rem;
+font-size:13.6px;
 color: #aaa5a5;
 }
 .album-link{
-font-size: 1rem;
+font-size: 16px;
 text-decoration: none;
     color: #7d8692;
 }
@@ -205,8 +222,8 @@ text-decoration: none;
 .album-img{
     float: right;
     position: relative;
-    left: 0.8rem;
-    top: 2rem;
+    left: 12.8px;
+    top: 32px;
     z-index: -100;
 
 }
@@ -214,7 +231,7 @@ text-decoration: none;
 /* Footer */
 footer {
     color: #979496;
-    font-size: 0.85rem;
+    font-size: 15px;
 }
 
 .footer-list{
@@ -237,4 +254,8 @@ footer {
 input{
     border-top: 3px inset grey;
     border-left: 3px inset grey;
+}
+
+.footer-form > input {
+    margin-left: 24px;
 }
