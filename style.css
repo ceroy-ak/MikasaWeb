@@ -5,12 +5,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* @media (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-    }
-
-} */
 
 /* .top-bar - MIKASA Logo and following list */
 
@@ -70,8 +64,8 @@ body{
 /* Top Main Content */
 
 .content-top {
-    padding-left: 8px; 
-    padding-right: 8px;
+    padding: 0px 8px;
+    
 }
 
 /*Left Side*/
@@ -84,9 +78,8 @@ body{
 /*Right Side*/
 
 .right-column{
-    border-top: 10px solid white;
-    border-bottom: 10px solid white;
-    border-right: 10px solid white;
+    border: 10px solid white;
+    border-left: 0px;
     background-color: #3d3c3a;
     align-items: center;
 }
@@ -124,8 +117,6 @@ body{
 .bottom-row{
     border: 10px solid black;
     background-color: white;
-    /* margin-left: 10px;
-    margin-right: 5px; */
     
 }
 
@@ -236,14 +227,14 @@ text-decoration: none;
 footer {
     color: #979496;
     font-size: 15px;
+    margin-top: 10px;
 }
 
 .footer-list{
     display: inline;
 }
 .footer-list > .footer-link{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px;
 }
 
 .footer-link{
