@@ -134,7 +134,7 @@ body{
 }
 
 .bottom-col{
-    height: 145px;
+    min-height: 145px;
 }
 .bottom--col-1 {
     z-index: 3;
