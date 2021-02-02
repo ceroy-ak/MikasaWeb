@@ -2,32 +2,35 @@
 
 body{
     background: url('res/Images/background12.png');
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
-/* .top-bar - MIKASA Logo and following list */
+/* HEADER */
 
-.border-right-item::after {
+/* Header - Nav 1*/
+
+.nav-1__a--border::after {
     content: '|';
     padding-left:22.4px;
 }
 
 @media (max-width: 992px) {
-    .border-right-item::after {
+    .nav-1__a--border::after {
         content: '';
         padding-left:0px;
     }
 }
 
-/*Top Navigation Bar */
+/*Header - Nav 2 */
 
-.black-link {
+.nav-2__a--black {
     color: black;
 }
-.black-link:hover{
+.nav-2__a--black:hover{
     color: grey;
 }
-.top-nav-parent {
+.nav-2__container {
     background-color:#dad8d9;
     border-top: 2px solid white;
     border-bottom:2px solid white;
@@ -36,45 +39,48 @@ body{
 
 
 
-.top-nav-item{
+.nav-2--items__border{
     border-right: 1px solid white;
 }
 
-/*Second Navigation Bar */
+/*Header - Nav 3 */
 
 
-.second-nav-item::before {
+.nav-3__a::before {
     content: '○';
     padding-right: 16px;
     color: gray;
     cursor: default;
 }
 @media (max-width: 992px) {
-    .second-nav-item::before {
+    .nav-3__a::before {
         content: '';
         padding-right: 0px;
         cursor: default;
     }
 }
 
-.bridal-registry {
+.nav-3__a--right-col {
     text-decoration: none;
     padding-right: 85px;
 }
 
-.bridal-registry:hover {
+.nav-3__a--right-col:hover {
     color: #3d3c3a;
 }
 
-/* Top Main Content */
 
-.content-top {
+/* MAIN */
+
+/* Main - Row 1 */
+
+.main__container {
     padding: 0px 8px;
     
 }
 
 /*Left Side*/
-.left-column {
+.main__img {
     border: 10px solid white;
     
     
@@ -82,138 +88,140 @@ body{
 
 /*Right Side*/
 
-.right-column{
+.main__box--parent{
     border: 10px solid white;
     border-left: 0px;
     background-color: #3d3c3a;
     align-items: center;
 }
-.right-sub-column {
+.main__box--child {
     background-color: #3d3c3a;
     border: 2px solid #52524f;
     color: #d6d4d5;
 }
 
-.right-column-p {
+.main__box__p {
     line-height: 30px;
 }
 
-.rc-content > a{
+.main__box--content > a{
     text-decoration: none;
     color: #d6d4d5;
 }
 
-.rc-content > a:hover{
+.main__box--content > a:hover{
     text-decoration: none;
     color: #a79fa3;
 }
 
-.rc-border {
+.main__box--content-border {
     padding-bottom: 5px;
     margin-top: 5px;
     border-bottom: 2px solid #52524f;
 }
 
-.row-bottom-a {
+.main__box__a {
     font-size: 15px;
     color: #a79fa3;
 }
-/*Bottom Content*/
+
+
+/* Main - Row 2 */
 .bottom-row{
     border: 10px solid black;
     background-color: white;
     
 }
 
-.bottom-banner{
+.bottom-col{
     height: 145px;
 }
-.glass {
+.bottom--col-1 {
     z-index: 3;
     position: relative;
 }
 
-.glass>p:first-child{
+.bottom--col-1>p:first-child{
     font-size: 21.2px;
 }
 
-.glass>p:nth-child(2){
+.bottom--col-1>p:nth-child(2){
     color: #aaa5a5;
     font-size: 12.6px;
 }
-.glass a {
+.bottom--col-1 a {
     font-size: 15px;
     float: right;
     text-decoration: none;
     margin-right: 16px;
 }
 
-.glass a:hover {
+.bottom--col-1 a:hover {
     color: #52524f;
 }
-.glass img {
+.bottom--col-1 img {
     position: absolute;
     top: -6px;
     z-index: -100;
 }
 
-.plate {
+.bottom--col-2 {
     z-index: 3;
     position: relative;
     
 }
 
-.plate>p:first-child{
+.bottom--col-2>p:first-child{
     font-size: 21.2px;
     
 }
 
-.plate>p:nth-child(2){
+.bottom--col-2>p:nth-child(2){
     color: #aaa5a5;
     font-size: 12.6px;
 }
-.plate a {
+.bottom--col-2 a {
     font-size: 15px;
     float: right;
     text-decoration: none;
     margin-right: 16px;
 }
 
-.plate a:hover {
+.bottom--col-2 a:hover {
     color: #52524f;
 }
-.plate img {
+.bottom--col-2 img {
     position: absolute;
     top: 29px;
     z-index: -100;
 }
 
 
-.album{
+.bottom--col-3{
     position: relative;
     
     
 }
 
-.bottom-album-z {
+.bottom--col-3-z {
     z-index: 3;
 }
-.album-title{
+.bottom--col-3-title{
 font-size: 21.2px;
 line-height: 25px;
 }
-.album-desc{
+.bottom--col-3-desc{
 font-size:12.6px;
 color: #aaa5a5;
 }
-.album-link{
+.bottom--col-3-link{
 font-size: 15px;
 text-decoration: none;
 }
-.album-link:hover{
+.bottom--col-3-link:hover{
     color: #52524f;
 }
-.album-img{
+.bottom--col-3-img{
     float: right;
     position: relative;
     left: 16px;
@@ -222,7 +230,13 @@ text-decoration: none;
 
 }
 
+.bottom__container{
+    padding: 0px 8px;
+}
+
 /* Footer */
+
+/* Footer - Row 1 */
 footer {
     color: #979496;
     font-size: 15px;
